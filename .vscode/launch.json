@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Discovery Server",
+      "request": "launch",
+      "mainClass": "com.programmingtechie.discovery_server.DiscoveryServerApplication",
+      "projectName": "discovery-server"
+    },
+    {
+      "type": "java",
+      "name": "Product Service",
+      "request": "launch",
+      "mainClass": "com.programmingtechie.product_service.ProductServiceApplication",
+      "projectName": "product-service"
+    },
+    {
+      "type": "java",
+      "name": "Inventory Service",
+      "request": "launch",
+      "mainClass": "com.programmingtechie.inventory_service.InventoryServiceApplication",
+      "projectName": "inventory-service"
+    },
+    {
+      "type": "java",
+      "name": "Order Service",
+      "request": "launch",
+      "mainClass": "com.programmingtechie.order_service.OrderServiceApplication",
+      "projectName": "order-service"
+    },
+    {
+      "type": "java",
+      "name": "API Gateway",
+      "request": "launch",
+      "mainClass": "com.programmingtechie.api_gateway.ApiGatewayApplication",
+      "projectName": "api-gateway"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run All Services",
+      "configurations": [
+        "Discovery Server",
+        "Product Service",
+        "Inventory Service",
+        "Order Service",
+        "API Gateway"
+      ]
+    }
+  ]
+}
