@@ -15,7 +15,8 @@ import com.programmingtechie.product_service.dto.ProductResponse;
 import com.programmingtechie.product_service.service.ProductService;
 
 import lombok.RequiredArgsConstructor;
-
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
 @RestController
 @RequestMapping("/api/product")
 @RequiredArgsConstructor
@@ -31,6 +32,7 @@ public class ProductController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts() {
+        log.info("GET products API called");
         return productService.getAllProducts();
     }
 }
